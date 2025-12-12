@@ -1,150 +1,127 @@
 export const INTERPRETATIONS = {
-  hero: `No interpretation needed - this is just the dramatic entrance.
-But if you're reading this, you're already invested. Welcome to the chaos.`,
+  hero: `This site documents abuse tactics observed in real-time during two YouTube livestreams in December 2024.
 
-  taleOfTape: `THE DATA SPEAKS:
+What you'll find here:
+- How chat moderation was used to control narrative
+- How infiltrators ran a coordinated pressure campaign
+- What DARVO (Deny, Attack, Reverse Victim and Offender) looks like in practice
+- Evidence that "positive sentiment" in a censored chat means nothing
 
-ASL has 5x the subscribers but only 32% fewer chatters showed up to Jenna's stream.
-That's a massive engagement gap.
+This is not entertainment. This is documentation.`,
 
-Jenna's smaller audience punches WAY above its weight.
-ASL's larger audience is... quieter. Make of that what you will.
+  censorship: `THE CENSORSHIP EVIDENCE:
 
-The sentiment and toxicity gaps are striking: ASL's chat was genuinely more positive
-and significantly less toxic. Whether that's moderation, audience culture, or
-something else entirely - the numbers don't lie.`,
+While ASL's chat appeared "positive" and "supportive," that positivity was manufactured through active suppression of dissent.
 
-  engagementParadox: `THE MATH:
+Key findings:
+- 44+ references to deleted comments
+- Jenna herself was blocked from responding to accusations against her
+- A paid superchat saying "we love Jenna" was deleted
+- Mod announced: "Any comments about what Jenna is saying will be deleted"
+- Questions about his pattern with women were removed
 
-ASL: 252,000 subscribers -> 634 chatters = 0.25% showed up
-Jenna: 47,100 subscribers -> 531 chatters = 1.13% showed up
+When you delete all criticism, what remains looks like support.
+That's not community health - that's narrative control.`,
 
-Jenna's participation rate is 4.48x higher relative to her audience size.
+  darvo: `DARVO IN ACTION:
 
-This could mean:
-- Her audience is more dedicated/parasocial
-- Her audience has stronger opinions about this drama
-- ASL's larger audience includes more casual subscribers who weren't online
-- All of the above
+DARVO stands for Deny, Attack, Reverse Victim and Offender.
+It's a manipulation tactic used by abusers to deflect accountability.
 
-The "Messages per 1K Subs" metric (78 vs 9.9) shows Jenna's audience
-isn't just showing up - they're TALKING. A lot.`,
+What we documented:
+- 145 instances of weaponized "therapy" and "mental health" language
+- 16 armchair BPD diagnoses directed at the accuser
+- 5 explicit reversals ("SHE called the cops?!")
+- Coordinated messaging that treated seeking help as pathology
 
-  paretoRule: `PARETO IN ACTION:
+When strangers on the internet diagnose a woman as mentally ill
+while she's accusing a man of abuse - that's not concern.
+That's a silencing tactic as old as time.`,
 
-Both chats follow the classic internet power law distribution:
-- Top 10% of users = ~51% of all messages
+  infiltrators: `THE PRESSURE CAMPAIGN:
 
-This is normal. What's interesting is the LURKER disparity:
-- ASL: 48% posted once and vanished
-- Jenna: Only 33% were one-and-done
+50 users who appeared in ASL's chat then went to Jenna's chat
+and deployed specific pressure tactics:
 
-Jenna's audience is stickier. They show up and they STAY in the conversation.
+- 103 "both sides" false equivalences
+- 71 "just move on" / "let it go" / "be the bigger person"
+- 8 credibility attacks ("dirty laundry")
+- 5 explicit attempts to discourage legal action
 
-The top power users (arkansasflamingo with 140 msgs, doaisaracist with 104)
-represent individual humans who typed over 100 messages during a livestream.
-That's... dedication? Obsession? You decide.`,
+These weren't neutral observers. They were running interference.
 
-  doubleAgents: `THE 150 CLUB:
+The message was clear: Don't press charges. Don't defend yourself.
+Be quiet. Move on. Let him control the narrative.
 
-These are people who actively participated in BOTH streams simultaneously
-or switched between them. They represent the true "drama tourists."
+That's not peacemaking. That's enabling.`,
 
-Key finding: 50% were CONSISTENT NEUTRAL. They weren't picking sides -
-they were just... watching. Digital rubbernecking.
+  patterns: `HIS OWN AUDIENCE ASKED QUESTIONS:
 
-The IMPACT ANALYSIS is the real story:
-Removing all 150 cross-chat users barely moves the needle on either chat's metrics.
-But notably, Jenna's toxicity gets WORSE without them (0.358 -> 0.389).
+The most damning evidence comes from ASL's own chat:
+- 93 references to marriage deception ("isn't he married?")
+- 76 credibility concerns ("cheater," "liar," "track record")
+- 26 pattern references ("not the first," "other women")
+- 3 Colombia incident references
 
-Translation: The tourists were actually a civilizing force in Jenna's chat.
-The real toxicity was coming from inside the house.`,
+His audience was asking the same questions Jenna was.
+Those questions were deleted.`,
 
-  hallOfFame: `THE PEACEKEEPERS:
+  theReframe: `WHAT THE DATA ACTUALLY SHOWS:
 
-These 11 humans tried to bring sanity to chaos.
-Combined positive sentiment above 0.4 across BOTH chats.
+The original analysis of this chat data drew wrong conclusions
+by treating censored data as truth:
 
-What makes a peacemaker:
-- Messages like "I hope you both heal" instead of picking sides
-- Discouraging armchair diagnosis
-- Reminding people that real humans are involved
+| Metric | Wrong Reading | Correct Reading |
+|--------|---------------|-----------------|
+| ASL's "positive" sentiment | Supportive community | Censored chat |
+| Jenna's "negative" sentiment | Toxic audience | Authentic emotion |
+| ASL's low toxicity | Healthy moderation | Deleted dissent |
+| Jenna's high toxicity | Drama-seeking | Infiltrators + real feelings |
+| "Neutral" cross-chat users | Observers | Infiltrators running tactics |
+| "Peacemakers" | Good actors | Silencing campaign |
 
-meowdy-there deserves special recognition: 105 messages across both streams,
-consistently neutral, actively discouraging toxic behavior.
+When you understand the context, the data tells a different story.`,
 
-They represent 7.3% of cross-chat users.
-The other 92.7% had other priorities.`,
+  finalVerdict: `THE DOCUMENTED RECORD:
 
-  wallOfShame: `THE TROUBLEMAKERS:
+This site exists so that:
 
-These users had the highest average toxicity scores across both chats.
-"Toxicity" here means: insults, personal attacks, armchair diagnosis,
-name-calling, excessive caps, and inflammatory language.
+1. Someone searching for ASL finds documentation of tactics used
+2. Enablers can see exactly what they participated in
+3. Abuse survivors recognize these patterns and feel validated
+4. The "positive sentiment" myth is debunked with evidence
+5. People learn to identify these tactics in their own lives
 
-Note: Nobody hit "severe" toxicity (9-10). The worst averaged around 2.0/10.
-This is actually... not that bad? Internet standards are low.
+This is what narrative control looks like.
+This is what a pressure campaign looks like.
+This is what DARVO looks like in real time.
 
-The VOLUME + VENOM award goes to doaisaracist:
-104 messages at 1.43 average toxicity = sustained low-grade hostility.
-When your username is a statement, you're not here for reconciliation.`,
+The chat logs don't lie - but they can be manipulated.
+We're showing you how.`,
 
-  flipFloppers: `THE POLITICIANS:
+  methodology: `HOW THIS ANALYSIS WAS CONDUCTED:
 
-Only 4 people (2.7%) changed their faction stance between chats.
-All of them went FROM a position TO neutral. Nobody switched sides entirely.
+Data Sources:
+- Full chat logs from both livestreams (December 2024)
+- Cross-referencing usernames between chats
+- Keyword matching for abuse tactics
 
-What this tells us:
-- Internet commenters are remarkably consistent in their loyalties
-- People who showed up to both were either neutral or committed
-- Nobody was convinced to change teams by what they saw
-
-The most interesting: genxray went PRO_ASL in ASL's chat but NEUTRAL in Jenna's.
-Tactical? Polite? We may never know.`,
-
-  finalVerdict: `THE SUMMARY:
-
-By the numbers, ASL "wins" on quality metrics:
-- 5x more positive sentiment
-- 3.8x less toxic
-- Cleaner, calmer chat
-
-Jenna "wins" on engagement metrics:
-- 47% more messages
-- 4.48x higher participation rate per subscriber
-- More active, vocal audience
-
-What does this mean? That's subjective.
-
-One interpretation: ASL's audience is more supportive, Jenna's is more engaged.
-Another: ASL's moderation is tighter, Jenna's audience is more emotionally invested.
-A third: This whole thing is parasocial drama and we should all go outside.
-
-The data doesn't tell you who's "right." It just tells you what happened.`,
-
-  methodology: `HOW WE SCORED:
-
-Sentiment (-1 to +1):
-Positive words/phrases push toward +1, negative toward -1.
-"Love you both" = positive. "This is ridiculous" = negative.
-
-Toxicity (0-10):
-Additive scoring based on detected markers:
-- Severe insults: +4
-- Personal attacks: +3
-- Armchair diagnosis: +2
-- Name-calling: +2
-- All caps: +1
-- Excessive punctuation: +1
-
-Faction Detection:
-Keyword matching for explicit support/attacks.
-Most messages (90%+) were neutral - not taking sides.
+Classifications:
+- DARVO_ATTACK: Weaponized mental health language
+- PATHOLOGIZE: Armchair diagnoses
+- DARVO_REVERSE: Victim-blaming reversals
+- FALSE_EQUIVALENCE: "Both sides" framing
+- WEAPONIZED_MOVE_ON: Pressure to stay silent
+- DISCOURAGE_LEGAL: Explicit attempts to prevent charges
+- INFILTRATOR: Cross-chat users deploying tactics
 
 Limitations:
-- Sarcasm detection is imperfect
-- Context matters and algorithms miss nuance
-- This is entertainment, not a court of law`,
+- This documents public chat behavior only
+- Usernames are as they appeared in chat
+- Context for individual messages may be incomplete
+
+Purpose:
+Educational documentation of abuse tactics for advocacy purposes.`,
 } as const;
 
 export type InterpretationKey = keyof typeof INTERPRETATIONS;
