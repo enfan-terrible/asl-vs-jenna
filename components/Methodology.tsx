@@ -48,93 +48,139 @@ export function Methodology() {
         {/* Section header */}
         <div className="mb-12">
           <div className="flex items-center gap-2">
-            <SectionMarker number="09" />
+            <SectionMarker number="05" />
             <InfoPopover content={INTERPRETATIONS.methodology} />
           </div>
           <h2 className="font-[family-name:var(--font-bebas-neue)] text-coral text-[clamp(2rem,6vw,3rem)] uppercase leading-tight mt-2">
             Methodology
           </h2>
           <p className="font-mono text-cream-muted text-xs mt-2">
-            For the nerds who want receipts
+            How this analysis was conducted
           </p>
         </div>
 
         {/* Accordion */}
         <div className="bg-navy-deep rounded-lg p-6 mb-12">
-          <AccordionItem title="Sentiment Analysis" defaultOpen={true}>
+          <AccordionItem title="Data Sources" defaultOpen={true}>
             <ul className="space-y-2 list-disc list-inside">
-              <li>Score range: -1 (negative) to +1 (positive)</li>
-              <li>Based on presence of sentiment-bearing words and phrases</li>
-              <li>Support phrases weighted higher for positive sentiment</li>
-            </ul>
-          </AccordionItem>
-
-          <AccordionItem title="Toxicity Scoring">
-            <ul className="space-y-2 list-disc list-inside">
-              <li>Score range: 0 (civil) to 10 (severe)</li>
-              <li>Markers:</li>
-              <ul className="ml-6 mt-2 space-y-1">
-                <li>Severe insults: +4</li>
-                <li>Personal attacks: +3</li>
-                <li>Armchair diagnosis: +2</li>
-                <li>Name-calling: +2</li>
-                <li>ALL CAPS: +1</li>
-              </ul>
-            </ul>
-          </AccordionItem>
-
-          <AccordionItem title="Faction Classification">
-            <ul className="space-y-2 list-disc list-inside">
-              <li>
-                <span className="text-coral">PRO_ASL:</span> Explicitly supports
-                Aaron, defends him
-              </li>
-              <li>
-                <span className="text-verdict">PRO_JENNA:</span> Explicitly
-                supports Jenna, defends her
-              </li>
-              <li>
-                <span className="text-cream">NEUTRAL:</span> No clear side
-              </li>
-              <li>
-                <span className="text-toxic">DRAMA_TOURIST:</span> Here for
-                entertainment
-              </li>
-            </ul>
-          </AccordionItem>
-
-          <AccordionItem title="Data Collection">
-            <ul className="space-y-2 list-disc list-inside">
-              <li>Total messages analyzed: 6,176</li>
+              <li>Full chat logs from both livestreams (December 2024)</li>
               <li>ASL&apos;s chat: 2,501 messages from 634 unique users</li>
               <li>Jenna&apos;s chat: 3,675 messages from 531 unique users</li>
-              <li>Cross-chat users identified: 150</li>
-              <li>Data analyzed: December 2024</li>
+              <li>Cross-chat user identification through username matching</li>
+              <li>150 users appeared in both chats</li>
+            </ul>
+          </AccordionItem>
+
+          <AccordionItem title="Abuse Tactic Classification">
+            <ul className="space-y-2 list-disc list-inside">
+              <li>
+                <span className="text-coral">DARVO_ATTACK:</span> Weaponized
+                mental health language (&quot;get therapy,&quot; &quot;she needs
+                help&quot;)
+              </li>
+              <li>
+                <span className="text-toxic">PATHOLOGIZE:</span> Armchair
+                diagnoses (BPD, abandonment issues)
+              </li>
+              <li>
+                <span className="text-shame">DARVO_REVERSE:</span> Making
+                victim&apos;s response seem unreasonable (&quot;she called the
+                cops?!&quot;)
+              </li>
+              <li>
+                <span className="text-coral">FALSE_EQUIVALENCE:</span>{" "}
+                &quot;Both sides&quot; framing
+              </li>
+              <li>
+                <span className="text-coral">WEAPONIZED_MOVE_ON:</span> Pressure
+                to stay silent
+              </li>
+              <li>
+                <span className="text-shame">DISCOURAGE_LEGAL:</span> Attempts
+                to prevent legal action
+              </li>
+            </ul>
+          </AccordionItem>
+
+          <AccordionItem title="User Classification">
+            <ul className="space-y-2 list-disc list-inside">
+              <li>
+                <span className="text-toxic">INFILTRATOR:</span> Appeared in
+                ASL&apos;s chat, then deployed pressure tactics in Jenna&apos;s
+                chat
+              </li>
+              <li>
+                <span className="text-cream-muted">FALSE_NEUTRAL:</span> Used
+                &quot;both sides&quot; framing as silencing tactic
+              </li>
+              <li>
+                <span className="text-cream-muted">ENABLER:</span> Supported
+                abuser narrative
+              </li>
+              <li>
+                <span className="text-shame">CENSOR:</span> Moderator who
+                actively suppressed dissent
+              </li>
+              <li>
+                <span className="text-shame">FLYING_MONKEY:</span> Direct attack
+                agent
+              </li>
+            </ul>
+          </AccordionItem>
+
+          <AccordionItem title="Censorship Evidence">
+            <ul className="space-y-2 list-disc list-inside">
+              <li>
+                Tracked meta-references to deletion (&quot;my comment was
+                deleted&quot;)
+              </li>
+              <li>Tracked timeout/mute references</li>
+              <li>Tracked blocking references</li>
+              <li>Documented moderator policy statements</li>
+              <li>Total censorship references: 83</li>
+            </ul>
+          </AccordionItem>
+
+          <AccordionItem title="Limitations">
+            <ul className="space-y-2 list-disc list-inside">
+              <li>Analysis covers public chat behavior only</li>
+              <li>Usernames are as they appeared in chat</li>
+              <li>
+                Deleted messages can only be identified through viewer
+                references
+              </li>
+              <li>Context for individual messages may be incomplete</li>
+              <li>This is documentation, not a legal proceeding</li>
             </ul>
           </AccordionItem>
         </div>
 
+        {/* Purpose statement */}
+        <div className="bg-navy-deep border border-coral/30 p-6 rounded-lg mb-12">
+          <h3 className="font-[family-name:var(--font-bebas-neue)] text-coral text-lg uppercase mb-3">
+            Purpose of This Documentation
+          </h3>
+          <p className="font-mono text-cream text-sm leading-relaxed">
+            This site serves as educational documentation of abuse tactics for
+            advocacy purposes. The goal is to help people recognize these
+            patterns when they encounter them, whether in online spaces or in
+            their own lives.
+          </p>
+        </div>
+
         {/* Final note */}
         <div className="text-center">
-          <p className="font-mono text-cream text-sm leading-relaxed">
-            &quot;No YouTubers were harmed in the making of this analysis.
+          <p className="font-mono text-cream-muted text-xs">
+            Site created: December 12, 2025
             <br />
-            <span className="text-coral italic">
-              Their reputations, however, are another matter.
-            </span>
-            &quot;
-          </p>
-          <p className="font-mono text-cream-muted text-xs mt-6">
-            Data analyzed: December 2024
-            <br />
-            Regrets: None
+            Analysis framework: Abuse tactic identification
           </p>
         </div>
 
         {/* Copyright */}
         <div className="mt-12 pt-6 border-t border-coral/20 text-center">
           <p className="font-mono text-cream-muted text-xs">
-            Built with data, irony, and questionable life choices.
+            Built for documentation and education.
           </p>
         </div>
       </div>

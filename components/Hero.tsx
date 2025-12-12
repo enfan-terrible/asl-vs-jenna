@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Scale } from "lucide-react";
+import { ShieldAlert } from "lucide-react";
 import { HERO_STATS } from "@/lib/data";
 import { INTERPRETATIONS } from "@/lib/interpretations";
 import { InfoPopover } from "./ui/InfoPopover";
@@ -57,7 +57,7 @@ function AnimatedCounter({
 
 export function Hero() {
   const scrollToSection = () => {
-    const section = document.getElementById("exhibit-a");
+    const section = document.getElementById("the-censorship");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
@@ -72,63 +72,90 @@ export function Hero() {
       </div>
 
       <div className="text-center relative z-10 max-w-4xl mx-auto">
-        {/* Scale icon */}
+        {/* Shield icon */}
         <div className="flex items-center justify-center gap-4 mb-8">
-          <Scale className="w-8 h-8 text-coral" />
+          <ShieldAlert className="w-8 h-8 text-coral" />
           <span className="font-mono text-coral text-sm uppercase tracking-widest">
-            [00] Court of Public Opinion
+            Documentation of Abuse Tactics
           </span>
           <InfoPopover content={INTERPRETATIONS.hero} />
-          <Scale className="w-8 h-8 text-coral" />
+          <ShieldAlert className="w-8 h-8 text-coral" />
         </div>
 
         {/* Main headline */}
-        <h1 className="font-[family-name:var(--font-bebas-neue)] text-coral text-[clamp(4rem,15vw,12rem)] leading-[0.9] uppercase">
-          ASL vs. JENNA
+        <h1 className="font-[family-name:var(--font-bebas-neue)] text-coral text-[clamp(2.5rem,10vw,7rem)] leading-[0.95] uppercase">
+          How Abusers Control
+          <br />
+          <span className="text-cream">The Narrative</span>
         </h1>
 
         {/* Subheadline */}
-        <p className="font-[family-name:var(--font-bebas-neue)] text-cream text-[clamp(1.5rem,4vw,3rem)] uppercase mt-4">
-          The Data Doesn&apos;t Lie
-        </p>
-        <p className="font-mono text-cream-muted text-sm mt-2">
-          (But both of them might)
+        <p className="font-mono text-cream-muted text-base md:text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
+          A data-driven analysis of chat moderation as silencing, infiltrators
+          running pressure campaigns, and DARVO in real time.
         </p>
 
-        {/* Animated counters */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-          <div className="text-center">
-            <div className="font-mono text-coral text-4xl md:text-5xl font-bold">
-              <AnimatedCounter end={HERO_STATS.messagesAnalyzed} />
+        {/* Key stats - the damning numbers */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+          <div className="text-center p-4 bg-navy-light/50 rounded-lg">
+            <div className="font-mono text-coral text-3xl md:text-4xl font-bold">
+              <AnimatedCounter end={HERO_STATS.infiltratorsIdentified} />
             </div>
             <div className="font-mono text-xs uppercase tracking-widest text-cream-muted mt-2">
-              messages analyzed
+              Infiltrators
+              <br />
+              Identified
             </div>
           </div>
-          <div className="text-center">
-            <div className="font-mono text-coral text-4xl md:text-5xl font-bold">
-              <AnimatedCounter end={HERO_STATS.armchairPsychologists} />
+          <div className="text-center p-4 bg-navy-light/50 rounded-lg">
+            <div className="font-mono text-coral text-3xl md:text-4xl font-bold">
+              <AnimatedCounter end={HERO_STATS.deletionReferences} />
             </div>
             <div className="font-mono text-xs uppercase tracking-widest text-cream-muted mt-2">
-              armchair psychologists
+              Deletion
+              <br />
+              References
             </div>
           </div>
-          <div className="text-center">
-            <div className="font-mono text-coral text-4xl md:text-5xl font-bold">
-              <AnimatedCounter end={HERO_STATS.doubleAgents} />
+          <div className="text-center p-4 bg-navy-light/50 rounded-lg">
+            <div className="font-mono text-coral text-3xl md:text-4xl font-bold">
+              <AnimatedCounter end={HERO_STATS.darvoAttacks} />
             </div>
             <div className="font-mono text-xs uppercase tracking-widest text-cream-muted mt-2">
-              double agents
+              DARVO
+              <br />
+              Attacks
             </div>
           </div>
+          <div className="text-center p-4 bg-navy-light/50 rounded-lg">
+            <div className="font-mono text-coral text-3xl md:text-4xl font-bold">
+              <AnimatedCounter end={HERO_STATS.falseEquivalences} />
+            </div>
+            <div className="font-mono text-xs uppercase tracking-widest text-cream-muted mt-2">
+              &quot;Both Sides&quot;
+              <br />
+              False Equivalences
+            </div>
+          </div>
+        </div>
+
+        {/* The key finding */}
+        <div className="mt-12 p-6 bg-navy-light border border-coral/30 rounded-lg max-w-2xl mx-auto">
+          <p className="font-mono text-cream text-sm leading-relaxed">
+            <span className="text-coral font-bold">Key Finding:</span> Jenna was
+            blocked from commenting on her own accusation in ASL&apos;s chat.
+            His &quot;positive sentiment&quot; was manufactured through
+            deletion. 50 users from his chat infiltrated hers to run a pressure
+            campaign.
+          </p>
         </div>
 
         {/* CTA Button */}
         <button
           onClick={scrollToSection}
-          className="mt-16 px-8 py-4 bg-coral hover:bg-coral-dark text-navy-deep font-mono uppercase tracking-widest text-sm font-bold transition-colors rounded"
+          className="mt-12 px-8 py-4 bg-coral hover:bg-coral-dark text-navy-deep font-mono uppercase tracking-widest text-sm font-bold transition-colors rounded"
         >
-          Enter the Courtroom
+          See the Evidence
         </button>
       </div>
 
